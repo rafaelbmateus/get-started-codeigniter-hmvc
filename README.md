@@ -1,4 +1,4 @@
-# get-started-codeigniter-hmvc
+# Get Started Codeigniter - hmvc
 Get started framework code igniter with extesion module hmvc and bootstrap admin.
 
 ## HMVC
