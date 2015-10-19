@@ -1,8 +1,8 @@
 # get-started-codeigniter-hmvc
 Get started framework code igniter with extesion module hmvc and bootstrap admin.
 
-# HMVC
-## Hierarchical model–view–controller (HMVC) is a software architectural pattern.
+## HMVC
+Hierarchical model–view–controller (HMVC) is a software architectural pattern.
 <br>
 application/modules/your-module
 <br>
@@ -29,7 +29,7 @@ modules/your-module/views/create
 <br>
 ...
 
-# Routing
+## Routing
 Following the structure of CodeIgniter.
 <br>
 Typically there is a one-to-one relationship between a URL string and its corresponding controller class/method. The segments in a URI normally follow this pattern:
@@ -41,7 +41,7 @@ example.com/users/create
 ...
 <br>
 
-#Execute in Git Bash:
+## Execute in Git Bash:
 <br>
 $git init
 <br>
