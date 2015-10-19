@@ -1,0 +1,25 @@
+php_flag display_errors off
+AddType text/x-component .htc
+<IfModule mod_rewrite.c>
+ DirectoryIndex index.php
+ RewriteEngine On
+ RewriteCond $1 !^(index\.php|assets|robots\.txt|favicon\.ico)
+ RewriteCond %{REQUEST_FILENAME} !-f
+ RewriteCond %{REQUEST_FILENAME} !-d
+ RewriteRule ^(.*)$ index.php/$1 [L]
+</IfModule>
+<IfModule !mod_rewrite.c>
+ ErrorDocument 404 /index.php
+</IfModule>
+ 
+# BEGIN REQUIRED FOR WEBFONTS
+AddType font/ttf .ttf
+AddType font/eot .eot
+AddType font/otf .otf
+AddType font/woff .woff
+<FilesMatch "\.(ttf|otf|eot|woff)$">
+<IfModule mod_headers.c>
+ Header set Access-Control-Allow-Origin "*"
+</IfModule>
+</FilesMatch>
+# END REQUIRED FOR WEBFONTS
