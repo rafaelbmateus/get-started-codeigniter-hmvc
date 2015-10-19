@@ -2,5 +2,7 @@
 Get started framework code igniter with extesion module hmvc and bootstrap admin.
 
 $git init
-$git clone /path/to/repository
+<br>
+$git clone https://github.com/rafaelbmateus/get-started-codeigniter-hmvc.git
+<br>
 $git pull
